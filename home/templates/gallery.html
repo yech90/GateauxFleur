@@ -1,0 +1,100 @@
+
+{% extends 'main.html' %}
+			<!-- Main -->
+{% load static %}
+
+{% block content %}
+
+			<nav id="nav">
+				<ul>
+					<li><a href="{% url 'home' %}" ><span class="icon fa-home"></span></a></li>
+					<li><a href="{% url 'gallery' %}" class="active"><span class="icon fa-camera-retro"></span></a></li>
+					<!--<li><a href="{% url 'generic' %}"><span class="icon fa-file-text-o"></span></a></li>-->
+				</ul>
+			</nav>
+			<!-- Main -->
+				<section id="main">
+
+					<!-- Header -->
+						<header id="header">
+							<div><p class="flower_font"> Gateau X Fleur </p></div>
+						</header>
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+
+									<!-- Filters -->
+										<!--### commented 20201105
+										<header>
+											<h1>Gallery</h1>
+											<ul class="tabs">
+												<li><a href="#" data-tag="all" class="button active">All</a></li>
+												<li><a href="#" data-tag="people" class="button">People</a></li>
+												<li><a href="#" data-tag="place" class="button">Places</a></li>
+												<li><a href="#" data-tag="thing" class="button">Things</a></li>
+											</ul>
+										</header>
+										-->
+
+										<div class="content">
+											<div class="media all people">
+												<a href="{% static 'images/fc/fc1.jpg' %}"><img src="{% static 'images/fc/fc1.jpg' %}" alt="" title="More details here." /></a>
+											</div>
+											<div class="media all place">
+												<a href="{% static 'images/fc/fc2.jpg' %}"><img src="{% static 'images/fc/fc2.jpg' %}" alt="" title="More details here." /></a>
+											</div>
+											<div class="media all thing">
+												<a href="{% static 'images/fc/fc3.jpg' %}"><img src="{% static 'images/fc/fc3.jpg' %}" alt="" title="More details here." /></a>
+											</div>
+											<div class="media all people">
+												<a href="{% static 'images/fc/fc4.jpg' %}"><img src="{% static 'images/fc/fc4.jpg' %}" alt="" title="More details here." /></a>
+											</div>
+											<div class="media all place">
+												<a href="{% static 'images/fc/fc5.jpg' %}"><img src="{% static 'images/fc/fc5.jpg' %}" alt="" title="More details here." /></a>
+											</div>
+											<div class="media all thing">
+												<a href="{% static 'images/fc/fc6.jpg' %}"><img src="{% static 'images/fc/fc6.jpg' %}" alt="" title="More details here." /></a>
+											</div>
+											<div class="media all people">
+												<a href="{% static 'images/fc/fc7.jpg' %}"><img src="{% static 'images/fc/fc7.jpg' %}" alt="" title="More details here." /></a>
+											</div>
+											<div class="media all place">
+												<a href="{% static 'images/fc/fc8.jpg' %}"><img src="{% static 'images/fc/fc8.jpg' %}" alt="" title="More details here." /></a>
+											</div>
+											<div class="media all thing">
+												<a href="{% static 'images/fc/fc9.jpg' %}"><img src="{% static 'images/fc/fc9.jpg' %}" alt="" title="More details here." /></a>
+											</div>
+											<div class="media all people">
+												<a href="{% static 'images/fc/fc10.jpg' %}"><img src="{% static 'images/fc/fc10.jpg' %}" alt="" title="More details here." /></a>
+											</div>
+											<div class="media all place">
+												<a href="{% static 'images/fc/fc11.jpg' %}"><img src="{% static 'images/fc/fc11.jpg' %}" alt="" title="More details here." /></a>
+											</div>
+											<div class="media all thing">
+												<a href="{% static 'images/fc/fc12.jpg' %}"><img src="{% static 'images/fc/fc12.jpg' %}" alt="" title="More details here." /></a>
+											</div>
+											<div class="media all place">
+												<a href="{% static 'images/fc/fc13.jpg' %}"><img src="{% static 'images/fc/fc13.jpg' %}" alt="" title="More details here." /></a>
+											</div>
+											<div class="media all thing">
+												<a href="{% static 'images/fc/fc14.jpg' %}"><img src="{% static 'images/fc/fc14.jpg' %}" alt="" title="More details here." /></a>
+											</div>
+										</div>
+								</div>
+						</section>
+
+					<!-- Contact -->
+					{% include 'contact.html' %}
+
+					<!-- Footer -->
+						<footer id="footer">
+							<div class="copyright">
+								Author @yech90
+							</div>
+						</footer>
+				</section>
+
+{% endblock content %}
